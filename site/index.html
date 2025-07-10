@@ -5,13 +5,15 @@
     <meta name="author" content="urgen-lama">
     <meta name="description" content="This is a webpage that has details about guitar and music production.">
     <title>Title</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 </head>
 <body>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/normalize.css">
     <div class="width-wrap">
         <header id="top"> <!--Found me!-->
             <nav>
@@ -24,6 +26,15 @@
         </header>
 
         <main>
+            <section id="Thumbnails-and-Alternative-Sizes">
+                <a href="images/myself.png" target="_blank">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/thumbnail-150.png">
+                        <source media="(max-width: 501px)" srcset="images/thumbnail-300.png">
+                        <img src="images/thumbnail-300.png" alt="Thumbnail">
+                    </picture>
+                </a>
+            </section>
             <section id="bio">
                 <h1>Welcome to Urgen's website</h1>
                 <p>
@@ -141,6 +152,19 @@
                     <li>Ranga</li>
                     <li>Gurasai Phulyo</li>
                 </ol>
+
+            </section>
+
+            <section id="embedding-external-content">
+                <h3>Public Domain Audiobook</h3>
+                <audio controls>
+                    <source src="https://ia801701.us.archive.org/34/items/democracy_nc_1106_librivox/democracy_01_adams.mp3" type="audio/mp3">
+                    <a href="https://ia801701.us.archive.org/34/items/democracy_nc_1106_librivox/democracy_01_adams.mp3">Download the audio book</a>
+                </audio>
+
+                <h3>Youtube Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mKn0gMH7qOs?si=PuMk4REx71AqX7U3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
 
             </section>
 

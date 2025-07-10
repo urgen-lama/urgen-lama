@@ -1,0 +1,15 @@
+.element {
+    box-sizing: border-box;
+}
+
+.width-wrap{
+    max-width: 960px;
+    margin: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black rgba(0, 0, 0, 0.3);
+    border-top-style: none;
+}
