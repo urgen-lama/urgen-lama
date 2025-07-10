@@ -5,14 +5,14 @@
     <meta name="author" content="urgen-lama">
     <meta name="description" content="This is a webpage that has details about guitar and music production.">
     <title>Title</title>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 </head>
 <body>
-    <div class="width-wrap">
+    <div class="width-wrap">`
         <header id="top"> <!--Found me!-->
             <nav>
                 <ul>
@@ -24,6 +24,15 @@
         </header>
 
         <main>
+            <section id="Thumbnails-and-Alternative-Sizes">
+                <a href="images/myself.png" target="_blank">
+                  <picture>
+                      <source media="(max-width: 500px)" srcset="images/thumbnail-150.png">
+                      <source media="(max-width: 501px)" srcset="images/thumbnail-300.png">
+                      <img src="images/thumbnail-300.png" alt="Thumbnail">
+                  </picture>
+                </a>
+            </section>
             <section id="bio">
                 <h1>Welcome to Urgen's website</h1>
                 <p>
@@ -40,16 +49,33 @@
                     <li>Guitar</li>
                     <li>Sports</li>
                 </ul>
-                <a href="https://assets.spotlight.fender.com/logos/fblack_hi_1212596975.jpg" target="_blank">
-                    <img src="images/logo.jpg" alt="fender_logo" width="250" height="300">
-                </a>
-
+                <section id="Working-with-Figures">
+                    <figure>
+                        <a href="https://assets.spotlight.fender.com/logos/fblack_hi_1212596975.jpg" target="_blank">
+                        <img src="images/logo.jpg" alt="fender_logo" width="250" height="300">
+                        </a>
+                        <figcaption>Fender Logo</figcaption>
+                    </figure>
+                </section>
                 <h3>My Favourite Songs</h3>
                 <ol>
                     <li>Dhun</li>
                     <li>Ranga</li>
                     <li>Gurasai Phulyo</li>
                 </ol>
+
+            </section>
+
+            <section id="embedding-external-content">
+                <h3>Public Domain Audiobook</h3>
+                <audio controls>
+                    <source src="https://ia801701.us.archive.org/34/items/democracy_nc_1106_librivox/democracy_01_adams.mp3" type="audio/mp3">
+                    <a href="https://ia801701.us.archive.org/34/items/democracy_nc_1106_librivox/democracy_01_adams.mp3">Download the audio book</a>
+                </audio>
+
+                <h3>Youtube Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mKn0gMH7qOs?si=PuMk4REx71AqX7U3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
 
             </section>
 
@@ -73,10 +99,16 @@
             <p>
                 &copy; 2024 <a href="mailto:https://outlook.office.com/mail/#code=1.AScAnd1hnCk7bU-zsfIS3jwl2iC_mZE_oQdBhdwCEUeH70gnABknAA.AgABBAIAAABVrSpeuWamRam2jAF1XRQEAwDs_wUA9P9H1fC7QLMcv_Zxlg2ZVFyH6QTXgdhuOg9rIRtvdtA9QpC22uuQ3SLtHFMege0NgM7P_9ylqPsIgs_PL71NYtmL8kEVAgZBayoRdq0JlVlSHZ08pfbgx43XGVgAL7h3rCfETFOOkyiZ4gXG0onwZrc3lWXmp4wlMNpf7-sqJPIBNhEfEMpmgi25uFRgz9zS6Q_ZxboXmyy2MrEp7sxXWYvw43-qjIIrzwtJSq7aq4Dcz4SYnhwjsicZ1qzFyd7aJ4F5-aWdqvztaCNw4SvkGf7UEzIG_ATx5MYjJwNSmsYShMAAhyzu-YEUJolN_fWFrFGUk6encSybetwAUYwlocbprDwCebW69qg6j7_jjJ-XH8mp-5HfBEcj6rc2q0uo8w745WHiAPKDta9TfKJsEUQvvkR9ckuke7Pd5W0upuAoyXRsintRAT-HsZyD-87WTH4J8sIH7PXcKAuVV_ofuqpTV0CkjWL1l1-eqxGeygHY5QlEm6niIEFqFpxzZEuqy9BWOxmx2X9xWUVSz4pzTouVpqqOeAHxAljHMPMUKf5Xk3Su_VDsl-b2O1zjtcedIgXRnN8JRaqQxr1T3XZU5wz93p0Kv9xn2AbJIZtcicXNyK9OLTstTE341XEFDJlEvMfBwx5yVmXEB8fYx94rNh-M9ckJgJY5HLmoUHdkTdjjj56rilVXnO_ePQUDd-ZpI-XMxiMxCLx-inmE_iEuxR_4TTIfY2C46Dy_n8gVHtNhFwr4pyNHspCLS9BUFQqSyV0TOl5wD526tTh3_nWbu0GBZ0eKIm5UUD0onRJ6xgaRRixGx_gyw-gK5uq5c7WVKBj_RC7DY1N-FZMme3mxvJFMuylojIUMjCuyxoKZKTI9nHzJhtuMK6W0hqdfAGoyQiVMwPQ4Nw&client_info=eyJ1aWQiOiI3Yjk4YzAzMS1lYTcyLTRiNDYtOWJlYi0yYTBhYzM4MWFjMzIiLCJ1dGlkIjoiOWM2MWRkOWQtM2IyOS00ZjZkLWIzYjEtZjIxMmRlM2MyNWRhIn0&state=eyJpZCI6IjAxOTZmNGZmLTAwMzEtNzRmZi1iNTkzLWYzYjlhMDUwYWIxZSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3d&session_state=003e9789-5c48-9da7-7417-158b8f05b363?subject=Message from CSD112 Website">Urgen</a>
             </p>
+        <section id="Working-with-Image-Support">
+            <picture>
+                <source srcset="images/sc-logo/sc-logo.svg" width=70px alt="logo">
+                <img src="images/sc-logo/sc-logo.svg"
+                     srcset="images/sc-logo/sc-logo/sc-logo.png 1x, images/sc-logo/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo/sc-logo_140.png 2x">
+            </picture>
+        </section>
         </footer>
         <a href="#top" title="Back to top">◤</a>
     </div>
-
 
 </body>
 </html>
