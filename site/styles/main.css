@@ -12,4 +12,117 @@
     border-style: solid;
     border-color: black rgba(0, 0, 0, 0.3);
     border-top-style: none;
+    margin-bottom: 3em;
+    background-color: #e2ded0;
+}
+
+body{
+    background-color: #647c90;
+    color: #4e4f50;
+}
+
+h1, h2, h3 {
+    color: #746c70;
+}
+
+a {
+    color: #4e4f50;
+}
+
+#top a{
+    color: #647c90;
+}
+
+::selection{
+    background-color: #647c90;
+    color: #e2ded0;
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav{
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+ header nav ul li {
+     display: inline;
+ }
+
+ header nav ul li a {
+     border-top: 4px solid transparent;
+     display: inline-block;
+     padding: 1em 1em 0.5em 1em;
+     margin-top: -4px
+ }
+
+ header nav ul li a:hover{
+     border-top-color: #746c70;
+ }
+
+ th, td {
+     padding: 0.3em 1em;
+ }
+
+ thead th, tfoot th, tfoot td, tbody th {
+     background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ tbody td {
+     background-color: rgba(0, 0, 0, 0.05);
+ }
+
+ tbody tr:nth-child(even) td {
+     background-color: rgba(0, 0, 0, 0.15);
+ }
+
+ /*Form*/
+label {
+    display: block;
+}
+
+input[type='radio'] + label,
+input[typre="checkbox"] + label {
+    display: inline;
+}
+
+input[type="submit"]{
+    border: none;
+    padding:1em 3em;
+    color: #4e4f50;
+    backgroud-color: #e2ded0;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    background-color: red;
+}
+footer{
+    width: clamp(300px, 50vw, 890px);
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-bottom-width: 3px;
+    border-bottom-style: dotted;
+    border-bottom-color: blue;
+}
+
+*{
+    border: none;
+}
+
+dt::after{
+}
+
+dt::after{
+    content: ":";
 }
